@@ -1,0 +1,3 @@
+# Assert
+
+Un assert pour les pauvres...
