@@ -8,8 +8,8 @@ import (
 
 func main() {
 	val := 20 * 2
-	assert.Assert(val == 42, "val n'a pas la bonne valeur : "+strconv.Itoa(val))
+	assert.Assert(val == 42, "Ok", "val n'a pas la bonne valeur : "+strconv.Itoa(val))
 
 	mess := "coucou"
-	assert.Assert(strings.HasPrefix(mess, "cou"), "mess n'a pas la bonne valeur")
+	assert.Assert(strings.HasPrefix(mess, "cou"), "Ok", "mess n'a pas la bonne valeur")
 }
