@@ -1,7 +1,7 @@
 package main
 
 import (
-	"assert"
+	"github.com/univ-tlse2/assert"
 	"strconv"
 	"strings"
 )

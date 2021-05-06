@@ -1,1 +1,1 @@
-module "assert"
+module "github.com/univ-tlse2/assert"
