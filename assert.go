@@ -8,12 +8,16 @@ func Assert(test bool, messOk, messNok string) {
 	if !test {
 		panic(messNok)
 	} else {
-		fmt.Println(messOk)
+		if messOk != "" {
+			fmt.Println("Succès :", messOk)
+		}
 	}
 }
 
 func noMessages() {
 	if r := recover(); r != nil {
-		fmt.Println("Assert failed :", r)
+		if r != "" {
+			fmt.Println("Échec :", r)
+		}
 	}
 }
