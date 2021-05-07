@@ -10,6 +10,6 @@ func main() {
 	val := 20 * 2
 	assert.Assert(val == 42, "Ok", "val n'a pas la bonne valeur : "+strconv.Itoa(val))
 
-	mess := "Coucou"
-	assert.AssertOk(strings.HasPrefix(mess, "cou"))
+	mess := "coucou"
+	assert.Assert(strings.HasPrefix(mess, "cou"), "", "")
 }
