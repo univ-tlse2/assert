@@ -14,6 +14,11 @@ func Assert(test bool, messOk, messNok string) {
 	}
 }
 
+// AssertOk vérifie simplement que le test réussit (pas d'affichage)
+func AssertOk(test bool) {
+	Assert(test, "", "")
+}
+
 func noMessages() {
 	if r := recover(); r != nil {
 		if r != "" {

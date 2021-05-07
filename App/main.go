@@ -11,5 +11,5 @@ func main() {
 	assert.Assert(val == 42, "Ok", "val n'a pas la bonne valeur : "+strconv.Itoa(val))
 
 	mess := "Coucou"
-	assert.Assert(strings.HasPrefix(mess, "cou"), "", "")
+	assert.AssertOk(strings.HasPrefix(mess, "cou"))
 }
