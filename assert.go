@@ -1,3 +1,4 @@
+// Package assert ajoute une fonction Assert pour tester une condition
 package assert
 
 import "fmt"
